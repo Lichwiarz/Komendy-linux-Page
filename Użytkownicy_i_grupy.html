@@ -1,0 +1,131 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>Linux Polecenia</title>
+		<meta charset="UTF-8"/>
+		<meta name="language" Content="pl"/>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="timer.js"></script>
+		<link rel="shortcut icon" href="Obrazy/Linux_Logo.jpg"/>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    </Head>
+    <Body onload="odliczanie();">
+        <header>
+            <a href="index.html">Główna</a>
+            <a href="Podstawowe_Komendy.html">Podstawowe komendy</a>
+            <a href="Prawa_dost%C4%99pu.html">Prawa dostępu</a>
+            <a href="Edytor_vi.html">Edytor vi</a>
+            <a href="U%C5%BCytkownicy_i_grupy.html">Użytkownicy i grupy</a>
+            <a href="Filtry.html">Filtry</a>
+            <a href="Procesy.html">Procesy</a>
+            <a href="Systemy_plik%C3%B3w.html">Systemy plików</a>
+            <a href="Archiwizacja.html">Archiwizacja(gzip,tar)</a>
+            <a href="Sieci.html">Sieci</a>
+            <a href="Tutoriale.html">Tutoriale</a>
+        </header>
+        <div id="zegar"></div>
+            <div class="main-box">
+                <h1>Użytkownicy i grupy</h1>
+                <div class="content-box"><span>su</span></div>
+                <div class="content-box">Zalogowanie się na konto superuzytkownika(Roota)</div>
+                
+                <div class="content-box"><span>su root -c</span><span2> polecenie</span2></div>
+                <div class="content-box">Uruchomienie jako root pojedynczego polecenia</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>write</span><span2> nazwa_uzytkownika </span2><span>[tty]</span></div>
+                <div class="content-box">Przesłanie wiadomości na terminal użytkownika. "tty" okresla terminal na króty ma zostac wysłana wiadomość</div>
+                
+                <div class="content-box"><span>who</span></div>
+                <div class="content-box">Wyświetlenie na jakich terminalach pracuje użytkownik</div>
+                
+                <div class="content-box"><span>talk</span></div>
+                <div class="content-box">Komunikacja między nadawcą a odbiorcą</div>
+                
+                <div class="content-box"><span>wall</span></div>
+                <div class="content-box">Komunikacja do wszystkich użytkowników, najczęściej administrator do wszytstkich</div>
+            </div>
+        <div class="underline-border"></div>
+        <!---------------------------------------------------------------------------->
+        <div class="main-box">
+            <div class="content-box"><span>w</span></div>
+            <div class="content-box">Ogólne informacje o użytkownikach(praca serwera, godzina, zalogowani uzytkownicy, identyfikator itd.)</div>
+                
+            <div class="content-box"><span>uptime</span></div>
+            <div class="content-box">Wyświetlenie pierwszą linie polecenia "w"</div>
+            
+            <div class="content-box"><span>finger</span></div>
+            <div class="content-box">Ogulne informacje o użytkownikach, podobnie jak w poleceniu "w", wyświetlone w innym formacie</div>
+                
+            <div class="content-box"><span>finger</span><span2> nazwa_uzytkownika</span2></div>
+            <div class="content-box">Informacje o konkretnym uzytkowniku</div>
+            
+            <div class="content-box"><span>last</span><span2> [-linie] [nazwa_uzytkownika]</span2></div>
+            <div class="content-box">Sprawdzenie kto i kiedy był zalogowane w przeszłości. "-Linie" ogranicza ilość wyników które nam się wyświetlą</div>
+            
+            <div class="content-box"><span>id</span><span2> nazwa_uzytkownika</span2></div>
+            <div class="content-box">specyfikacja sprawdzanego użytkownika. W przypadku nie podania nazwy użytkownika, "id" zwraca dane dotyczące użytkownika bieżącego</div>
+        </div>
+        <div class="underline-border"></div>
+        <!---------------------------------------------------------------------------->
+        <div class="main-box">
+            <div class="content-box"><span>chgrep</span><span2> nazwa_grupy</span2><span2> nazwa_pliku</span2></div>
+            <div class="content-box">Zmiana grupy która ma prawa do danego pliku/ków</div>
+                
+            <div class="content-box"><span>chown</span><span2> nazwa_właściciela :nazwa_grupy nazwa_pliku</span2></div>
+            <div class="content-box">Zmiania grupy i właściciela podanego pliku/ków</div>
+                
+            <div class="content-box"><span>chfn</span></div>
+            <div class="content-box">Zmiana informacji o uzytkowniku w systemie</div>
+        </div>
+        <div class="underline-border"></div>
+        <!---------------------------------------------------------------------------->
+        <div class="main-box">
+            <div class="content-box"><span>groupadd -g</span><span2> gid_grupy nazwa_grupy</span2></div>
+            <div class="content-box">Tworzenie nowej grupy i nadanie jej numeru GID(numer identyfikacyjny)</div>
+                
+            <div class="content-box"><span>groupadd</span><span2> nazwa_grupy</span2></div>
+            <div class="content-box">Tworzenie nowej grupy, system sam nada numer GID</div>
+                
+            <div class="content-box"><span>groupmod -n</span><span2> nowa_nazwa obecna_nazwa</span2></div>
+            <div class="content-box">Zmiana nazwy grupy</div>
+            
+            <div class="content-box"><span>groupdel</span><span2> nazwa_grupy</span2></div>
+            <div class="content-box">Usunięcie grupy</div>
+            
+            <div class="content-box"><span>gpasswd -a</span><span2> nazwa_uzytkownika nazwa_grupy</span2></div>
+            <div class="content-box">Dodanie użytkownika do grupy</div>
+            
+            <div class="content-box"><span>gpasswd -d</span><span2> nazwa_użytkownika nazwa_grupy</span2></div>
+            <div class="content-box">Usunięcie użytkownika z grupy</div>
+        </div>
+        <div class="underline-border"></div>
+        <!---------------------------------------------------------------------------->
+         <div class="main-box">
+            <div class="content-box"><span>useradd -d</span><span2> katalog_domowy</span2><span> -g </span><span2>grupa_początkowa</span2><span> -G</span><span2> inne_grupy</span2><span> -s</span><span2> powłoka</span2><span> -u</span><span2> UID nazwa_uzytkownika</span2></div>
+            <div class="content-box">Dodanie nowego uzytkownika. Katog domowy okresla scieszkę do katalogu uzytkownika. UID to numer identyfikacyjny</div>
+                
+            <div class="content-box"><span>useradd</span><span2> nazwa_użytkownika</span2></div>
+            <div class="content-box">Dodanie nowego uzytkownika z domyślnymi ustawieniami</div>
+             
+            <div class="content-box"><span>passwd</span><span2> nazwa_użytkownika</span2></div>
+            <div class="content-box">Ustawienie hasła dla konta</div>
+             
+            <div class="content-box"><span>usermod -o</span><span2> nazwa_uzytkowniaka</span2><span> -d</span><span2> katalog_domowy</span2><span> -m -g </span><span2>nazwa_grupy</span2><span> -s</span><span2> powłoka</span2><span> -l</span><span2> nowa_nazwa obecna_nazwa</span2></div>
+            <div class="content-box">Wprowadzenie nowej konfiguracji konta z paramertrami tak jak podczas ręcznego tworzenia</div>
+             
+            <div class="content-box"><span>userdel -r</span><span2> nazwa_użytkownika</span2></div>
+            <div class="content-box">Usuwanie konta uzytkownika</div>
+             
+            <div class="content-box"><span>passwd -l</span><span2> nazwa_użytkownika</span2></div>
+            <div class="content-box">Zablokowanie konta</div>
+             
+            <div class="content-box"><span>passwd -u</span><span2> nazwa_użytkownika</span2></div>
+            <div class="content-box">Odblokowanie konta</div>
+        </div>
+        <div class="underline-zone"></div>
+        <!---------------------------------------------------------------------------->   
+    </Body>
+</HTML>

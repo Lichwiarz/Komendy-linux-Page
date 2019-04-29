@@ -1,0 +1,68 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>Linux Polecenia</title>
+		<meta charset="UTF-8"/>
+		<meta name="language" Content="pl"/>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="timer.js"></script>
+		<link rel="shortcut icon" href="Obrazy/Linux_Logo.jpg"/>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    </Head>
+    <Body onload="odliczanie();">
+        <header>
+            <a href="index.html">Główna</a>
+            <a href="Podstawowe_Komendy.html">Podstawowe komendy</a>
+            <a href="Prawa_dost%C4%99pu.html">Prawa dostępu</a>
+            <a href="Edytor_vi.html">Edytor vi</a>
+            <a href="U%C5%BCytkownicy_i_grupy.html">Użytkownicy i grupy</a>
+            <a href="Filtry.html">Filtry</a>
+            <a href="Procesy.html">Procesy</a>
+            <a href="Systemy_plik%C3%B3w.html">Systemy plików</a>
+            <a href="Archiwizacja.html">Archiwizacja(gzip,tar)</a>
+            <a href="Sieci.html">Sieci</a>
+            <a href="Tutoriale.html">Tutoriale</a>
+        </header>
+        <div id="zegar"></div>
+        <div class="main-box">
+            <h1>Procesy</h1>
+            <div class="content-box"><span>ps</span></div>
+            <div class="content-box">Wyświetla numer PID, terminal sterujący procesu, całkowity czas w którym proces zajmował procesor, oraz komenda za pomocą której proces został uruchomiony</div>
+            
+            <div class="content-box"><span>ps -m</span></div>
+            <div class="content-box">Wyświetla informacje o pamięci</div>
+            
+            <div class="content-box"><span>ps -f</span></div>
+            <div class="content-box">Wyświetla w formacie drzewiastym</div>
+            
+            <div class="content-box"><span>ps -S</span></div>
+            <div class="content-box">Dodaje czas cpu potomka i błądy stron</div>
+            
+            <div class="content-box"><span>ps -c</span></div>
+            <div class="content-box">Wyświetla nazwę komendy z task_struct</div>
+            
+            <div class="content-box"><span>ps -e</span></div>
+            <div class="content-box">Wyświetla środowisko z linią komend "+"</div>
+            
+            <div class="content-box"><span>ps -h</span></div>
+            <div class="content-box">Wyświetla informacje bez bagłówka</div>
+            
+            <div class="content-box"><span>ps -r</span></div>
+            <div class="content-box">Wyświetla tylko pracujące procesy</div>
+            
+            <div class="content-box"><span>ps -n</span></div>
+            <div class="content-box">Wyświetla wyjście numeryczne dla USER i WCHAN</div>
+        </div>
+        <div class="underline-border"></div>
+        <!---------------------------------------------------------------------------->
+        <div class="main-box">
+            <div class="content-box"><span>top</span></div>
+            <div class="content-box">Program działający w konsoli, wyświetlający odświeżaną listę procesów aktualnie działających w systemie. Dzięki niemu możemy monitorować to co aktualnie dzieje się w systemie. Dane te mogą być sortowane według różnych kryteriów</div>
+            
+            <div class="content-box"><span>htop</span></div>
+            <div class="content-box">Program wyświetlający informacje o aktualnym obciążeniu systemu przez poszczególne procesy działające w konsoli, podobnie jak "top" lecz w przestępniejszej szacie graficznej (program nalezy doinstalować)</div>
+        </div>
+        <div class="underline-zone"></div>
+        <!---------------------------------------------------------------------------->
+    </Body>
+</HTML>

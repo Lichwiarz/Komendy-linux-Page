@@ -1,0 +1,163 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>Linux Polecenia</title>
+		<meta charset="UTF-8"/>
+		<meta name="language" Content="pl"/>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="timer.js"></script>
+		<link rel="shortcut icon" href="Obrazy/Linux_Logo.jpg"/>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    </Head>
+    <Body onload="odliczanie();">
+        <header>
+            <a href="index.html">Główna</a>
+            <a href="Podstawowe_Komendy.html">Podstawowe komendy</a>
+            <a href="Prawa_dost%C4%99pu.html">Prawa dostępu</a>
+            <a href="Edytor_vi.html">Edytor vi</a>
+            <a href="U%C5%BCytkownicy_i_grupy.html">Użytkownicy i grupy</a>
+            <a href="Filtry.html">Filtry</a>
+            <a href="Procesy.html">Procesy</a>
+            <a href="Systemy_plik%C3%B3w.html">Systemy plików</a>
+            <a href="Archiwizacja.html">Archiwizacja(gzip,tar)</a>
+            <a href="Sieci.html">Sieci</a>
+            <a href="Tutoriale.html">Tutoriale</a>
+        </header>
+        <div id="zegar"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <h1>Podstawowe komendy</h1>
+                <div class="content-box"><span>ls</span></div>
+                <div class="content-box">Wylistowanie zawartości katalogu</div>
+                
+                <div class="content-box"><span>ls -a</span></div>
+                <div class="content-box">Wylistowanie zawartości katalogu wraz z plikami ukrytymi</div>
+                
+                <div class="content-box"><span>ls -l</span></div>
+                <div class="content-box">Wylistowanie zawartaści ze wszystkimi informacjami o plikach i katalogach</div>
+                
+                <div class="content-box"><span>ls -x</span></div>
+                <div class="content-box">Wylistowanie zawartości posortowanej według rozszerzeń</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>mkdir</span></div>
+                <div class="content-box">Tworzenie katalogu</div>
+                
+                <div class="content-box"><span>mkdir -m</span><span2>/.../...</span2></div>
+                <div class="content-box">Tworzenie katalogu z określonymi prawami autorskimi</div>
+                
+                <div class="content-box"><span>mkdir -p</span></div>
+                <div class="content-box">Tworzenie katalogu z zagnieżdżoną struktórą katalogów</div>
+                
+                <div class="content-box"><span>rmdir</span></div>
+                <div class="content-box">Usuwanie katalogu</div>
+                
+                <div class="content-box"><span>mv</span><span2> stara_nazwa nowa_nazwa</span2></div>
+                <div class="content-box"> Zmiana nazwy katalogu</div>
+                
+                <div class="content-box"><span>mv</span><span2> kat1 kat2</span2></div>
+                <div class="content-box">Przenoszenie katalogu 1 do katalogu 2</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>touch</span> <span2>nazwa_pliku</span2></div>
+                <div class="content-box"> Tworzenie pliku</div>
+                
+                <div class="content-box"><span>cat ></span> <span2>nazwa_pliku</span2><br></div>
+                <div class="content-box">Tworzenie i edycja pliku (zakończenie edytowania CTRL + D)</div>
+                
+                <div class="content-box"><span>less</span> <span2>nazwa_pliku <span>></span> nowy_plik</span2><br></div>
+                <div class="content-box">Tworzenie i przepisanie pliku</div>
+                
+                <div class="content-box"><span>less</span> <span2>nazwa_pliku <span>>></span> nowy_plik</span2><br></div>
+                <div class="content-box">Doklejanie do pliku</div>
+                
+                <div class="content-box"><span><span>rm</span> <span2>nazwa_pliku</span2></span></div>
+                <div class="content-box">Usuwanie pliku</div>
+                
+                <div class="content-box"><span>rm -f</span></div>
+                <div class="content-box">Usuwanie pliku bez potwierdzenia</div>
+                
+                <div class="content-box"><span>rm -r</span></div>
+                <div class="content-box">Usuwanie katalogu ze podkatalogami i plikami</div>
+                
+                <div class="content-box"><span>rm -i</span></div>
+                <div class="content-box">Usuwanie z żądaniem potwierdzenia usuwania każdego pliku</div>
+                
+                <div class="content-box"><span>rm -v</span></div>
+                <div class="content-box">Wyświetlanie nazwy podczas usuwania każdego pliku</div>
+                
+                <div class="content-box"><span>mv</span> <span2> stara_nazwa nowa_nazwa</span2></div>
+                <div class="content-box">Zmiana nazwy pliku</div>
+                
+                <div class="content-box"><span>mv</span> <span2>plik1 plik2</span2></div>
+                <div class="content-box">Przeniesienie plik1 do plik2</div>
+                
+                <div class="content-box"><span>cp</span> <span2>plik_źródłowy plik_docelowy</span2></div>
+                <div class="content-box">Kopiowanie pliku</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>cal</span></div>
+                <div class="content-box">Wyświetla kalendarz</div>
+                
+                <div class="content-box"><span>cal -j</span></div>
+                <div class="content-box">Wyświetla kalendarz Juliański</div>
+                
+                <div class="content-box"><span>cal -y</span></div>
+                <div class="content-box">Wyświetla kalendarz na bierzący rok</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>wc</span><span2> opcje nazwa_pliku</span2></div>
+                <div class="content-box">Zlicza liczbę znaków, słów i wierszy w pliku tekstowym.</div>
+                
+                <div class="content-box"><span>wx -c</span></div>
+                <div class="content-box">Tylko liczba znaków</div>
+                
+                <div class="content-box"><span>wc -l</span></div>
+                <div class="content-box">Tylko liczba wierszy</div>
+                
+                <div class="content-box"><span>wc -w</span></div>
+                <div class="content-box">Tylko liczba słów</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>sudo apt-get install</span><span2> nazwa_programu</span2></div>
+                <div class="content-box">Instalacja programu</div>
+                
+                <div class="content-box"><span>sudo apt-get remove</span><span2> nazwa_programu</span2></div>
+                <div class="content-box">Odinstalowanie programu</div>
+                
+                <div class="content-box"><span>sudo apt-get autoremove</span></div>
+                <div class="content-box">Usuwanie nieużywanych pakietów</div>
+            </div>
+            <div class="underline-border"></div>
+            <!---------------------------------------------------------------------------->
+            <div class="main-box">
+                <div class="content-box"><span>pwd</span></div>
+                <div class="content-box">Pokazuje ścieżkę dostępu do miejsca w którym się znajdujemy</div>
+                
+                <div class="content-box"><span>clear</span></div>
+                <div class="content-box">"Wyczyszczenie" ekranu kosnoli</div>
+                
+                <div class="content-box"><span>date</span><span2> opcje format</span2></div>
+                <div class="content-box">Wypisanie bieżącej daty i czasu w opcjonalnie podanym formacie</div>
+                
+                <div class="content-box"><span>hostname</span></div>
+                <div class="content-box">Wyświetla nazwę komputera</div>
+                
+                <div class="content-box"><span>find</span><span2> scieżka_do_katalogu opcje</span2></div>
+                <div class="content-box">Polecenie do wyszukiwania plików</div>
+                
+            </div>
+            <!---------------------------------------------------------------------------->
+            <div class="underline-zone"></div>
+    </Body>
+</HTML>

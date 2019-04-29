@@ -1,0 +1,50 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>Linux Polecenia</title>
+		<meta charset="UTF-8"/>
+		<meta name="language" Content="pl"/>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="timer.js"></script>
+		<link rel="shortcut icon" href="Obrazy/Linux_Logo.jpg"/>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    </Head>
+    <Body onload="odliczanie();">
+        <header>
+            <a href="index.html">Główna</a>
+            <a href="Podstawowe_Komendy.html">Podstawowe komendy</a>
+            <a href="Prawa_dost%C4%99pu.html">Prawa dostępu</a>
+            <a href="Edytor_vi.html">Edytor vi</a>
+            <a href="U%C5%BCytkownicy_i_grupy.html">Użytkownicy i grupy</a>
+            <a href="Filtry.html">Filtry</a>
+            <a href="Procesy.html">Procesy</a>
+            <a href="Systemy_plik%C3%B3w.html">Systemy plików</a>
+            <a href="Archiwizacja.html">Archiwizacja(gzip,tar)</a>
+            <a href="Sieci.html">Sieci</a>
+            <a href="Tutoriale.html">Tutoriale</a>
+        </header>
+        <div id="zegar"></div>
+        <div class="main-box">
+            <h1>Sieci</h1>
+            <div class="content-box"><span>ip addr</span></div>
+            <div class="content-box">Wyświetla informacje o adresach interfejsów sieciowych</div>
+            
+            <div class="content-box"><span>ifconfig</span></div>
+            <div class="content-box">Wyświetlenie statusu aktywnych interfejsów sieciowych, np. twój IP adres</div>
+            
+            <div class="content-box"><span>sudo netstat -tup</span></div>
+            <div class="content-box">Wyświetla wszystkie aktywne połączenia z/do twojego systemu</div>
+            
+            <div class="content-box"><span>net lookup</span><span2> adres strony</span2></div>
+            <div class="content-box">Wyszukiwanie numeru IP strony</div>
+            
+            <div class="content-box"><span>ping</span><span2> adres IP</span2></div>
+            <div class="content-box">Pingowanie podanego adresu</div>
+            
+            <div class="content-box"><span>route -n</span></div>
+            <div class="content-box">Wyświetlenie bramy domyślnej</div>
+        </div>
+        <!---------------------------------------------------------------------------->
+        <div class="underline-zone"></div>
+    </Body>
+</HTML>

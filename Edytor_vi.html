@@ -1,0 +1,186 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>Linux Polecenia</title>
+		<meta charset="UTF-8"/>
+		<meta name="language" Content="pl"/>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="timer.js"></script>
+		<link rel="shortcut icon" href="Obrazy/Linux_Logo.jpg"/>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    </Head>
+    <Body onload="odliczanie();">
+        <header>
+            <a href="index.html">Główna</a>
+            <a href="Podstawowe_Komendy.html">Podstawowe komendy</a>
+            <a href="Prawa_dost%C4%99pu.html">Prawa dostępu</a>
+            <a href="Edytor_vi.html">Edytor vi</a>
+            <a href="U%C5%BCytkownicy_i_grupy.html">Użytkownicy i grupy</a>
+            <a href="Filtry.html">Filtry</a>
+            <a href="Procesy.html">Procesy</a>
+            <a href="Systemy_plik%C3%B3w.html">Systemy plików</a>
+            <a href="Archiwizacja.html">Archiwizacja(gzip,tar)</a>
+            <a href="Sieci.html">Sieci</a>
+            <a href="Tutoriale.html">Tutoriale</a>
+        </header>
+        <div id="zegar"></div>
+            <!-- ------------------------------------------------------------------------ -->
+            <div class="main-box">
+                <h1>Edytor VI</h1>
+                <div class="content-box"><span>vi</span></div>
+                <div class="content-box">Uruchomienie edytotora 'vi'</div>
+                
+                <div class="content-box"><span>vi<span2> nazwa pliku</span2></span></div>
+                <div class="content-box">Otworzenie pliku .txt w edytorze</div>
+                
+                <div class="content-box"><span>ESC</span></div>
+                <div class="content-box">Wyjście do trybu poleceń</div>
+            </div>
+            <div class="underline-border"></div>
+            <!-- ------------------------------------------------------------------------ -->
+            <div class="main-box">
+                <div class="content-box"><span>ZZ</span> /<span> x:</span></div>
+                <div class="content-box">Wyjśćie z edytora z zapisaniem wprowadzonych poprawek</div>
+                
+                <div class="content-box"><span>:w</span></div>
+                <div class="content-box">Zapisanie wprowadzonych poprawek</div>
+                
+                <div class="content-box"><span>:q</span></div>
+                <div class="content-box">Wyjśćie z edytora bez zachowania poprawek</div>
+                
+                <div class="content-box"><span>:w</span><span2> nazwa_pliku</span2></div>
+                <div class="content-box">Zapisuje zawartość bufora edytora do pliku</div>
+                
+                <div class="content-box"><span>:w,</span><span2>xy nazwa_pliku</span2></div>
+                <div class="content-box">Zapisuje linie o numerach od x do y do pliku</div>
+                
+                <div class="content-box"><span>:e!</span></div>
+                <div class="content-box">Wymazuje dokonane modyfikacje i udostępnia ponownie ten sam zbiór do edycji</div>
+                
+                <div class="content-box"><span>:r</span><span2> nazwa_zbioru</span2></div>
+                <div class="content-box">Wczytuje zbiór za linie bieżącą</div>
+            </div>
+            <div class="underline-border"></div>
+            <!-- ------------------------------------------------------------------------ -->
+            <div class="main-box">
+                <div class="content-box"><span>i</span></div>
+                <div class="content-box">Test wstawiany jest przed bieżąca pozycją kursora</div>
+                
+                <div class="content-box"><span>I</span></div>
+                <div class="content-box">Przesuniecie kursora do początku bieżącej linii i umożliwia wstawienie testu od tej pozycji</div>
+                
+                <div class="content-box"><span>o</span></div>
+                <div class="content-box">Tworzy nowa linie poniżej bieżącej i umożliwia wprowadzanie tam tekstu</div>
+                
+                <div class="content-box"><span>O</span></div>
+                <div class="content-box">Tworzy nowa linie powyżej bieżącej i umożliwia wprowadzenie tam tekstu</div>
+                
+                <div class="content-box"><span>a</span></div>
+                <div class="content-box">Umożliwia wprowadzanie tekstu za bieżącą pozycja kursora</div>
+                
+                <div class="content-box"><span>A</span></div>
+                <div class="content-box">Przesuwa kursor na koniec linii bieżącej i umożliwia wprowadzanie tekstu od tej pozycji</div>
+            </div>
+            <div class="underline-border"></div>
+             <!-- ------------------------------------------------------------------------ -->
+            <div class="main-box">
+                <div class="content-box"><span>0</span></div>
+                <div class="content-box">Przesuwanie kursora do pierwszego znaku w lini</div>
+                
+                <div class="content-box"><span>$</span></div>
+                <div class="content-box">Przesuwanie kursora do ostatniego znaku w lini</div>
+                
+                <div class="content-box"><span>b</span></div>
+                <div class="content-box">Przesuwanie kursora w lewo o jedno słowo</div>
+                
+                <div class="content-box"><span>w</span></div>
+                <div class="content-box">Przesuwanie kursora w prawo o jedno słowo</div>
+                
+                <div class="content-box"><span>+</span></div>
+                <div class="content-box">Przesuwanie kursora do początku następnej linii</div>
+                
+                <div class="content-box"><span>-</span></div>
+                <div class="content-box">Przesuwanie kursora do początku poprzedniej linii</div>
+                
+                <div class="content-box"><span>Enter</span></div>
+                <div class="content-box">Przesuwanie kursora do początku następnej linii</div>
+                
+                <div class="content-box"><span>j</span></div>
+                <div class="content-box">Przesuwanie kursora do następnej linii w tej samej kolumnie</div>
+                
+                <div class="content-box"><span>k</span></div>
+                <div class="content-box">Przesuwanie kursora do poprzedniej w tej samej kolumnie</div>
+                
+                <div class="content-box"><span>1G</span></div>
+                <div class="content-box">Przesuwanie kursora do początku tekstu</div>
+                
+                <div class="content-box"><span>G</span></div>
+                <div class="content-box">Przesówanie kursora do początku ostatniej linii testu</div>
+                
+                <div class="content-box"><span2>n</span2><span>G</span></div>
+                <div class="content-box">Przesuwanie kursora do linii o numerze n</div>
+                
+                <div class="content-box"><span>{</span></div>
+                <div class="content-box">Przesuwanie kursora do poczatku poprzedniego paragrafu</div>
+                
+                <div class="content-box"><span>}</span></div>
+                <div class="content-box">Przesuwanie kursora do końca bieżącego, lub następnego paragrafu</div>
+                
+                <div class="content-box"><span>CRTL+f</span></div>
+                <div class="content-box">Przesuwa tekst o 1 ekran do przodu</div>
+                
+                <div class="content-box"><span>CTRL+b</span></div>
+                <div class="content-box">Przesuwa tekst o 1 ekran do tułu</div>
+                
+                <div class="content-box"><span>H</span></div>
+                <div class="content-box">Przesuwa kursor do górnego lewego rogu</div>
+                
+                <div class="content-box"><span>M</span></div>
+                <div class="content-box">Przesuwanie kursora do środka ekranu</div>
+                
+                <div class="content-box"><span>L</span></div>
+                <div class="content-box">Przesuwanie kursora do lewego dolnego rogu ekranu</div>
+            </div>
+            <div class="underline-border"></div>
+            <!-- ------------------------------------------------------------------------ -->
+            <div class="main-box">
+                <div class="content-box"><span>x</span></div>
+                <div class="content-box">Usuwa 1 znak na bieżącej pozycji kursora</div>
+                
+                <div class="content-box"><span>nx</span></div>
+                <div class="content-box">Usuwa n znaków na prawo od bieżącej pozycji kursora</div>
+                
+                <div class="content-box"><span>X</span></div>
+                <div class="content-box">Usuwa 1 znak na lewo od bieżącej pozycji kursora</div>
+                
+                <div class="content-box"><span>nX</span></div>
+                <div class="content-box">Usuwa n znaków na lewo od bieżącej pozycji kursora</div>
+                
+                <div class="content-box"><span>D</span></div>
+                <div class="content-box">Usuwa znaki od bieżącej pozycji kursora do końca linii</div>
+                
+                <div class="content-box"><span>dd</span></div>
+                <div class="content-box">Usuwa linie bieżącą</div>
+                
+                <div class="content-box"><span>ndd</span></div>
+                <div class="content-box">Usuwa n linii począwszy od linii bieżącej</div>
+                
+                <div class="content-box"><span>d0</span></div>
+                <div class="content-box">Usuwa znaki od początku linii bieżącej do pozycji kursora</div>
+                
+                <div class="content-box"><span>dH</span></div>
+                <div class="content-box">Usuwa znaki od pozycji kursora od góry ekranu</div>
+                
+                <div class="content-box"><span>dM</span></div>
+                <div class="content-box">Usuwa znaki od pozycji kursora od środka ekranu</div>
+                
+                <div class="content-box"><span>dL</span></div>
+                <div class="content-box">Usuwa znaki od pozycji kursora od dołu ekranu</div>
+                
+                <div class="content-box"><span>dG</span></div>
+                <div class="content-box">Usuwa znaki od linii bieżącej do końca zbioru</div>
+            </div>
+            <div class="underline-zone"></div>
+            <!-- ------------------------------------------------------------------------ -->
+    </Body>
+</HTML>

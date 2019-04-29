@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 1px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16rem;
+}
+/*-- ------------------------------------------------------------------------ --*/
+#zegar{
+    float: right;
+    margin-right: 20px;
+}
+#main-description{
+    text-align: center;
+    font-size: 22rem;
+    margin-top: 20px;
+}
+#main-description2{
+    text-align: right;
+    margin-right: 22px;
+}
+/*-- ------------------------------------------------------------------------ --*/
+.main-box{
+    width: 70%;
+    height: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    overflow: auto;
+}
+.content-box{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.content-box-2{
+    float: left;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.underline-border{
+    border-bottom: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: dotted;
+    border-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.underline-zone{
+    padding-bottom: 30px;
+}
+.download-image{
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: right;
+}
+/*-- ------------------------------------------------------------------------ --*/
+header{
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border: 0px;
+    
+    display: flex;
+    justify-content: center;
+}
+span{
+    color: dodgerblue;
+}
+span2{
+    color: lightslategrey;
+}
+a{
+    border: 0px;
+    float: left;
+    outline: none;
+}
+header > a:link{
+    color: mediumpurple;
+    padding: 10px; 
+    display: block;
+    text-decoration: none;
+}
+header > a:visited{
+    color: mediumpurple;
+}
+header > a:hover{
+    color: darkorange;
+}
+h1{
+    text-align: center;
+    color: dodgerblue;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+/*-- ------------------------------------------------------------------------ --*/
+@media (max-width: 720px){
+    html{
+        font-size: 0.8;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
