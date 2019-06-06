@@ -112,19 +112,10 @@ h1{
         font-size: 0.8;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 400px){
+    .main-box{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
