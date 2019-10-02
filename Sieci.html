@@ -26,20 +26,32 @@
         <div id="zegar"></div>
         <div class="main-box">
             <h1>Sieci</h1>
-            <div class="content-box"><span>ip addr</span></div>
+            <div class="content-box"><span>ip addr show</span></div>
             <div class="content-box">Wyświetla informacje o adresach interfejsów sieciowych</div>
             
-            <div class="content-box"><span>ifconfig</span></div>
+            <div class="content-box"><span>ifconfig -a</span></div>
             <div class="content-box">Wyświetlenie statusu aktywnych interfejsów sieciowych (np. twój IP adres)</div>
             
             <div class="content-box"><span>sudo netstat -tup</span></div>
             <div class="content-box">Wyświetla wszystkie aktywne połączenia z/do twojego systemu</div>
             
+            <div class="content-box"><span>net view</span></div>
+            <div class="content-box">Wyśiwtla listę komputerów w sieci lokalnej LAN</div>
+            
+            <div class="content-box"><span>iwlist scan</span></div>
+            <div class="content-box">Wyświetla dostępne sieci bezprzewodowe</div>
+            
+            <div class="content-box"><span>net start</span></div>
+            <div class="content-box">Wyświetla listę wszystkich uruchomionych usług sieciowych</div>
+            
             <div class="content-box"><span>net lookup</span><span2> adres strony</span2></div>
             <div class="content-box">Wyszukiwanie numeru IP strony</div>
             
-            <div class="content-box"><span>ping</span><span2> adres IP</span2></div>
-            <div class="content-box">Pingowanie podanego adresu</div>
+            <div class="content-box"><span>ping</span><span2> adres IP</span2> / <span2>Https</span2></div>
+            <div class="content-box">Pingowanie podanego adresu(sprawdza połaczenie)</div>
+            
+            <div class="content-box"><span>tracert</span><span2> adres IP</span2> / <span2>Https</span2></div>
+            <div class="content-box">Wyświetla trasę po której pakiet porusza się do miejsca docelowego</div>
             
             <div class="content-box"><span>route -n</span></div>
             <div class="content-box">Wyświetlenie bramy domyślnej</div>
